@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Digital payments Book</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 80px;
+			
+			border-radius: 100px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: white;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: blue;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: safe left;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: safe left;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 35px;
+		}
+		.aboutfont{
+			font-size: 20px;
+		}
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 20;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "../images/logo1.png">
+			</div>
+			<li><a href="#pay">DigiPay</a></li>
+			<li><a href="#about">About Us</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<a href="login.html" target="_blank">
+            <button class="btn btn-sm">login</button>
+        	</a>
+		</div>
+	</nav>
+
+  	<section class="background-image">
+  		<div style="background-image: url('../images/digi.jpg'); 
+  	background-size: cover; height:600px;">
+  	</div>
+  	</section>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="pay">Digi Pay</h1>
+				<p class="text-small">
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="aboutfont" id="about">About Us</h1>
+
+			<p class="sectionSubTag text-small">
+				Digital Payments Book Solutions <br>
+				Contact No: xxxx-xxx-xxx<br>
+				email: digipay@gmail.com
+			</p>
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+	</footer>
+
+
+</body>
+
+</html>

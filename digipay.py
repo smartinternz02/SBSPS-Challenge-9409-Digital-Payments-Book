@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import Flask, request, render_template
+
 
 app = Flask(__name__)
 
-@app.route("/")
-def digipay():
-    return "<h1>Hello, Users!</h1> <hr> <p>Hi Everyone, Welcome to your Digital Payments history</p>"
+@app.route('/')
+def index():
+    return render_template('index.html')
