@@ -1,214 +1,98 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<title>Digital payments Book</title>
-
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-
-		.navbar {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: sticky;
-			top: 0;
-			cursor: pointer;
-		}
-
-		.background {
-			background: black;
-			background-blend-mode: darken;
-			background-size: cover;
-		}
-
-		.nav-list {
-			width: 70%;
-			display: flex;
-			align-items: center;
-		}
-
-		.logo {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.logo img {
-			width: 80px;
-			
-			border-radius: 100px;
-		}
-
-		.nav-list li {
-			list-style: none;
-			padding: 26px 30px;
-		}
-
-		.nav-list li a {
-			text-decoration: none;
-			color: white;
-		}
-
-		.nav-list li a:hover {
-			color: grey;
-		}
-
-		.rightnav {
-			width: 30%;
-			text-align: right;
-		}
-
-		#search {
-			padding: 5px;
-			font-size: 17px;
-			border: 2px solid grey;
-			border-radius: 9px;
-		}
-
-		.firstsection {
-			background-color: white;
-			height: 400px;
-		}
-
-		.secondsection {
-			background-color: blue;
-			height: 400px;
-		}
-
-		.box-main {
-			display: flex;
-			justify-content: safe left;
-			align-items: center;
-			color: black;
-			max-width: 80%;
-			margin: auto;
-			height: 80%;
-		}
-
-		.firsthalf {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: safe left;
-		}
-
-		.text-big {
-			font-family: 'Piazzolla', serif;
-			font-weight: bold;
-			font-size: 35px;
-		}
-
-		.text-small {
-			font-size: 18px;
-		}
-
-		.btn {
-			padding: 8px 20px;
-			margin: 7px 0;
-			border: 2px solid white;
-			border-radius: 8px;
-			background: none;
-			color: white;
-			cursor: pointer;
-		}
-
-		.btn-sm {
-			padding: 6px 10px;
-			vertical-align: middle;
-		}
-
-		.section {
-			height: 400px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			max-width: 90%;
-			margin: auto;
-		}
-
-		.section-Left {
-			flex-direction: row-reverse;
-		}
-
-		.paras {
-			padding: 0px 35px;
-		}
-		.aboutfont{
-			font-size: 20px;
-		}
-		.center {
-			text-align: center;
-		}
-
-		.text-footer {
-			text-align: center;
-			padding: 30px 20;
-			font-family: 'Ubuntu', sans-serif;
-			display: flex;
-			justify-content: center;
-			color: white;
-		}
-	</style>
+	<title>Login V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-
 <body>
-	<nav class="navbar background">
-		<ul class="nav-list">
-			<div class="logo">
-				<img src= "../images/logo1.png">
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-02.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-book"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-90">
+						<a class="txt1" href="#">
+							Forgot Password?
+						</a>
+					</div>
+				</form>
 			</div>
-			<li><a href="#pay">DigiPay</a></li>
-			<li><a href="#about">About Us</a></li>
-		</ul>
-
-		<div class="rightNav">
-			<input type="text" name="search" id="search">
-			<a href="login.html" target="_blank">
-            <button class="btn btn-sm">login</button>
-        	</a>
 		</div>
-	</nav>
+	</div>
+	
 
-  	<section class="background-image">
-  		<div style="background-image: url('../images/digi.jpg'); 
-  	background-size: cover; height:600px;">
-  	</div>
-  	</section>
-
-	<section class="firstsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="pay">Digi Pay</h1>
-				<p class="text-small">
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="paras">
-			<h1 class="aboutfont" id="about">About Us</h1>
-
-			<p class="sectionSubTag text-small">
-				Digital Payments Book Solutions <br>
-				Contact No: xxxx-xxx-xxx<br>
-				email: digipay@gmail.com
-			</p>
-		</div>
-	</section>
-
-	<footer class="background">
-		<p class="text-footer">
-			Copyright ©-All rights are reserved
-		</p>
-	</footer>
-
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
-
 </html>
